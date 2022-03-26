@@ -63,7 +63,7 @@ h3 {
 h5 {
   text-align: center;
   padding: 10px 0;
-  font-size: 30px;
+  font-size: 30px !important;
   color: rgb(226, 211, 192);
 }
 
@@ -74,7 +74,6 @@ p{
   font-size: 20px;
   background: rgba(158, 119, 22, 0.1);
   border-bottom: 4px solid wheat;
-  border-right: 4px solid wheat;
 }
 
 p::first-letter{
@@ -109,8 +108,9 @@ li {
   display: block;
 }
 
-a{
-  padding: 5px;
+.capitulos{
+  padding: 1px;
+  padding-bottom: 5px;
   margin: 10px 3px;
   background: radial-gradient(rgb(180, 150, 0), black);
   color: rgb(255, 255, 255);
@@ -122,18 +122,34 @@ a{
   display: inline;
   text-align: center;
 }
-a:hover{
+.capitulos:hover{
   transition: 0.5;
   background: radial-gradient(rgb(255, 213, 0), white);
   color: black;
 
 }
 
+.butao{
+  position: fixed;
+  left: 10px;
+  top: 15px;
+}
+
+a{
+  text-decoration: none !important;
+  color: black !important;
+}
+
 @media (max-width: 991.98px) {
   .capa-helena {
     max-width: 100%;
   }
-
+  .butao{
+    position: fixed;
+    left: 10px;
+    top: unset;
+    bottom: 15px;
+  }
   #tabela {
     width: 95%;
   }
