@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+}
+body::-webkit-scrollbar {
+  background: url(/img/fundo1.jpg);
+}
+body::-webkit-scrollbar-thumb {
+  border: 2px solid black;
+  width: 15px;
+  border-radius: 10px;
+  background: url(/img/fundo2.jpg);
+}
+
+header {
+  background: url(/img/fundo2.jpg);
+  padding: 10px 0;
+}
+
+main {
+  padding: 20px 0;
+  border-top: 2px solid black;
+  filter: contrast(120%);
+  background: url(/img/fundo2.jpg);
+}
+
+footer {
+  border-top: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px 0;
+  background: url(/img/fundo1.jpg);
+}
+
+h1 {
+  padding: 20px 0;
+  text-align: center;
+  background: url(/img/fundo1.jpg);
+  color: rgb(26, 19, 19);
+  font-size: 36px;
+  border-bottom: 2px solid black;
+  filter: drop-shadow(16px 16px 20px rgb(145, 146, 95)) contrast(130%);
+}
+h1::first-line{
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+h3 {
+  color: aliceblue;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px !important;
+  color: rgb(226, 211, 192);
+}
+
+p{
+  padding: 8px 15px;
+  max-width: 800px;
+  color: rgb(220, 200, 160);
+  font-size: 20px;
+  background: rgba(158, 119, 22, 0.1);
+  border-bottom: 4px solid wheat;
+}
+
+p::first-letter{
+  font-size: 32px;
+  padding-left: 20px;
+}
+
+.alinha{
+  text-align: center !important;
+}
+
+li {
+  list-style: none;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.capa-helena {
+  margin: 20px 0;
+  max-width: 800px;
+  border: 1px solid black;
+}
+
+#tabela {
+  border: 2px solid black;
+  width: 700px;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px 5px;
+  display: block;
+}
+
+.capitulos{
+  padding: 1px;
+  padding-bottom: 5px;
+  margin: 10px 3px;
+  background: radial-gradient(rgb(180, 150, 0), black);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid black;
+  height: 32px;
+  width: 150px !important;
+  display: inline;
+  text-align: center;
+}
+.capitulos:hover{
+  transition: 0.5;
+  background: radial-gradient(rgb(255, 213, 0), white);
+  color: black;
+
+}
+
+.butao{
+  position: fixed;
+  left: 10px;
+  top: 15px;
+}
+
+a{
+  text-decoration: none !important;
+  color: black !important;
+}
+
+@media (max-width: 991.98px) {
+  .capa-helena {
+    max-width: 100%;
+  }
+  .butao{
+    position: fixed;
+    left: 10px;
+    top: unset;
+    bottom: 15px;
+  }
+  #tabela {
+    width: 95%;
+  }
+  .capitulos {
+    padding: 4px;
+    margin: 10px 2px;
+    font-size: 12px;
+    border: 1px solid black;
+    height: 40px;
+    width: 70px !important;
+    display: inline;
+    text-align: center;
+  }
+
+}

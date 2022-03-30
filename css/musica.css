@@ -1,0 +1,74 @@
+@font-face {
+  font-family: chique;
+  src: url(/font/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: brenda;
+  src: url(/font/Blenda-Script.ttf);
+}
+
+body{
+  background: linear-gradient(-45deg, #723725, rgb(24, 24, 24));
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+  color: aliceblue !important;
+}
+
+h1{
+  font-size: 55px;
+  text-align: center;
+  font-family: chique;
+}
+
+h5{
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 38px;
+  text-align: center;
+  font-family: brenda;
+}
+
+pre{
+  font-size: 1.5em;
+  color: bisque;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+pre::first-letter{
+  font-family: Georgia;
+  font-size: 2.2em;
+  padding-left: 14px;
+}
+
+.botao{
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: gold;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.video{
+  width: 100%;
+  height: 80vh;
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musica{
+  margin: 10px;
+}
